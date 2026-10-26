@@ -1,0 +1,23 @@
+spring.application.name=finmail
+spring.datasource.url=jdbc:postgresql://localhost:5432/finmail
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+
+# API de Claude: https://platform.claude.com/settings/keys
+app.claude.api-key=YOUR_ANTHROPIC_API_KEY
+# Opcional; por defecto claude-haiku-5-5
+#app.claude.model=claude-haiku-5-5
+
+# CORS — frontend URL (use * for development)
+app.cors.allowed-origins=http://localhost:5173
+
+# Single user credentials
+spring.security.user.name=YOUR_USERNAME
+spring.security.user.password=YOUR_PASSWORD
+
+# JWT — generate a secure random base64 string (min 32 chars)
+app.jwt.secret=YOUR_BASE64_JWT_SECRET
+app.jwt.access-expiration-ms=3600000
+app.jwt.refresh-expiration-ms=2592000000
